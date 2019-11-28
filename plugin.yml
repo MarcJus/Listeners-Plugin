@@ -1,0 +1,4 @@
+name: Listeners
+version: 1.2.2
+author: MarcJus
+main: fr.marcjus.listeners.MainPluginListeners
