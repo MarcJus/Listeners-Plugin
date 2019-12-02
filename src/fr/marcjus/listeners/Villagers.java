@@ -20,8 +20,7 @@ public class Villagers implements Listener {
 		if(e.getEntityType() == EntityType.VILLAGER && !isCustomNPC(ent)){
 			Villager v = (Villager) e.getEntity();
 			Entity damager = e.getDamager();
-			if(damager.getType() != EntityType.PLAYER || damager.getType().equals(EntityType.SNOWBALL) || damager.getType().equals(EntityType.ARROW)){
-				Player player = (Player) damager;
+			if(damager.getType() != EntityType.PLAYER || damager.getType() == EntityType.SNOWBALL || damager.getType().equals(EntityType.ARROW)){
 				e.setCancelled(true);
 			}else if(damager.getType().equals(EntityType.SNOWBALL)){
 				Snowball s = (Snowball) damager;
