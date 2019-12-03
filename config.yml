@@ -1,0 +1,6 @@
+badwords:
+- merde
+- putain
+- con
+messages:
+  deny: "&4Ce mot est interdit ! "
