@@ -17,7 +17,6 @@ public class MainPluginListeners extends JavaPlugin{
 		pm.registerEvents(new Villagers(), this);
 		pm.registerEvents(new Connecting(), this);
 		pm.registerEvents(new Death(), this);
-		pm.registerEvents(new GodSword(), this);
 	}
 	
 	@Override
