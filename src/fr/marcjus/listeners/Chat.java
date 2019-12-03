@@ -5,6 +5,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerChatEvent;
 
+import fr.marcjus.MainPluginListeners;
+
 @SuppressWarnings("deprecation")
 public class Chat implements Listener {
 	
