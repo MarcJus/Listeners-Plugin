@@ -24,10 +24,10 @@ public class Chat implements Listener {
 			for(int i = 0; i<main.getBadwords().size(); i++){
 				if(message.contains(main.getBadwords().get(i))){
 					e.setCancelled(true);
-					player.sendMessage(main.getConfig().getString("messages.deny").replace('&', '§'));
+					player.sendMessage("§cLe mot §4"+main.getBadwords().get(i)+"§c est interdit");
 				}
 			}
 		}
 	}
-
+	
 }

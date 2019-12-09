@@ -7,7 +7,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.marcjus.listeners.Chat;
 import fr.marcjus.listeners.Connecting;
-import fr.marcjus.listeners.Death;
+import fr.marcjus.listeners.DeathRespawn;
+import fr.marcjus.listeners.Feed;
+import fr.marcjus.listeners.Spectator;
 import fr.marcjus.listeners.Villagers;
 
 public class MainPluginListeners extends JavaPlugin{
@@ -23,8 +25,10 @@ public class MainPluginListeners extends JavaPlugin{
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new Villagers(), this);
 		pm.registerEvents(new Connecting(), this);
-		pm.registerEvents(new Death(), this);
 		pm.registerEvents(new Chat(this), this);
+		pm.registerEvents(new Feed(), this);
+		pm.registerEvents(new DeathRespawn(), this);
+		pm.registerEvents(new Spectator(), this);
 	}
 	
 	@Override
