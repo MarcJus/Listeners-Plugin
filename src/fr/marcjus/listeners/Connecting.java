@@ -12,6 +12,7 @@ public class Connecting implements Listener {
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
 		Player player = e.getPlayer();
+		//player.setInvulnerable(false);
 
 		player.removePotionEffect(PotionEffectType.SPEED);
 		player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 99999, 1));
