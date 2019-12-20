@@ -9,6 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.marcjus.listeners.Chat;
 import fr.marcjus.listeners.Connecting;
+import fr.marcjus.listeners.Death;
 import fr.marcjus.listeners.DeathRespawn;
 import fr.marcjus.listeners.Feed;
 import fr.marcjus.listeners.Spectator;
@@ -31,6 +32,7 @@ public class MainPluginListeners extends JavaPlugin{
 		pm.registerEvents(new Feed(), this);
 		pm.registerEvents(new DeathRespawn(), this);
 		pm.registerEvents(new Spectator(), this);
+		pm.registerEvents(new Death(), this);
 	}
 	
 	@Override
