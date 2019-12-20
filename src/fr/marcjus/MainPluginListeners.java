@@ -2,6 +2,8 @@ package fr.marcjus;
 
 import java.util.ArrayList;
 
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -33,7 +35,9 @@ public class MainPluginListeners extends JavaPlugin{
 	
 	@Override
 	public void onDisable() {
-		
+		for(Player player : Bukkit.getOnlinePlayers()){
+			player.kickPlayer("§cReload du serveur. Merci d'attendre 10 sec environ avant de se reconnecter.");
+		}
 	}
 	
 	public ArrayList<String> getBadwords(){
